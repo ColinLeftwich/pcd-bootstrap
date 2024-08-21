@@ -34,6 +34,9 @@
           - stow
           - zoxide
           - fzf
+          - jq
+          - exa
+          - terraform
         state: present
 
     - name: Software Dev Packages
@@ -44,6 +47,27 @@
           - alacritty
           - just
           - jre21-openjdk
+          - python-poetry
+          - ruff
+          - typst
+        state: present
+
+    - name: Media
+      package:
+        name:
+          - obs-studio
+          - blender
+          - audactiy
+          - krita
+          - inkscape
+        state: present
+
+    - name: Productivity
+      package:
+        name:
+          - obsidian
+          - flameshot
+          - filelight
         state: present
 
     - name: Engineering
@@ -54,4 +78,6 @@
           - kicad-library-3d
           - verilator
           - klayout
+          - wireshark-cli
+          - wireshark-qt
         state: present

@@ -8,3 +8,17 @@ TODO
 - [ ] Use bash script
 - [ ] Add ansible.cfg
 - [ ] Add roles
+- [ ] Add task to setup and install virtmanager
+
+AUR Software to add
+mprocs
+lazydocker
+anki
+spacedrive
+ulauncher
+guisrcpy
+zotero
+rustdesk
+barrier
+czkawaka
+nmap
