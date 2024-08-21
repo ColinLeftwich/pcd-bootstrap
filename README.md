@@ -9,6 +9,8 @@ Ansible Playbook for boostrapping my personal computer device's
 - [ ] Add ansible.cfg
 - [ ] Add roles
 - [ ] Add task to setup and install virtmanager
+- [ ] Compare running Ansible local vs Ansible-git pull
+- [ ] Add Github CI/CD job that does ansible-check
 
 # AUR Software to add
 - mprocs
