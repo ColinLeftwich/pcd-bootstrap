@@ -2,7 +2,7 @@
 Ansible Playbook for boostrapping my personal computer device's
 
 
-TODO
+# TODO
 - [ ] Create Projects Directory
 - [ ] Generate SSH Key
 - [ ] Use bash script
@@ -10,15 +10,15 @@ TODO
 - [ ] Add roles
 - [ ] Add task to setup and install virtmanager
 
-AUR Software to add
-mprocs
-lazydocker
-anki
-spacedrive
-ulauncher
-guisrcpy
-zotero
-rustdesk
-barrier
-czkawaka
-nmap
+# AUR Software to add
+- mprocs
+- lazydocker
+- anki
+- spacedrive
+- ulauncher
+- guisrcpy
+- zotero
+- rustdesk
+- barrier
+- czkawaka
+- nmap
