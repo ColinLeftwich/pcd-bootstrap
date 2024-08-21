@@ -1,0 +1,57 @@
+---
+- name: Bootstrap Desktop
+  hosts: localhost
+  become: true
+  vars:
+    ansible_connection: local
+    ansible_python_interpreter: auto_silent
+
+  tasks:
+    - name: Update System
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Enable and Start Bluetooth
+      service:
+        name: bluetooth
+        enabled: yes
+        state: started
+
+    - name: Install Core Packages
+      package:
+        name:
+          - vim
+          - ranger
+          - curl
+          - tmux
+          - nvtop
+          - git
+          - htop
+          - zsh
+          - net-tools
+          - rsync
+          - stow
+          - zoxide
+          - fzf
+        state: present
+
+    - name: Software Dev Packages
+      package:
+        name:
+          - zed
+          - neovim
+          - alacritty
+          - just
+          - jre21-openjdk
+        state: present
+
+    - name: Engineering
+      package:
+        name:
+          - kicad
+          - kicad-library
+          - kicad-library-3d
+          - verilator
+          - klayout
+        state: present
