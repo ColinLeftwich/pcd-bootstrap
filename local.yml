@@ -57,7 +57,7 @@
         name:
           - obs-studio
           - blender
-          - audactiy
+          - audacity
           - krita
           - inkscape
         state: present
