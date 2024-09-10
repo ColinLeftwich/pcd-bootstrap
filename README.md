@@ -26,3 +26,4 @@ Ansible Playbook for boostrapping my personal computer device's
 - czkawaka
 - nmap
 - FD
+- gleam
