@@ -1,5 +1,5 @@
 # pcd-bootstrap (Personal Computer Device Bootstrap)
-Ansible Playbook for boostrapping my personal computer device's
+Ansible Playbook for boostrapping my personal computer devices
 
 
 # TODO
