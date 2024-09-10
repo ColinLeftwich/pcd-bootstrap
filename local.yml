@@ -48,8 +48,9 @@
           - just
           - jre21-openjdk
           - python-poetry
+          - python-pytest
           - ruff
-          - typst
+          - pyright
         state: present
 
     - name: Media
