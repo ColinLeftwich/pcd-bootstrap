@@ -47,6 +47,7 @@
           - jq
           - bat
           - eza
+          - git-delta
           - terraform
         state: present
 
