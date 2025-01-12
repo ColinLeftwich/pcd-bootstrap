@@ -66,7 +66,7 @@
           - ansible-lint
         state: present
 
-    - name: Media
+    - name: Media Packages
       package:
         name:
           - obs-studio
@@ -86,7 +86,7 @@
           - scrcpy
         state: present
 
-    - name: Engineering
+    - name: Engineering Packages
       package:
         name:
           - kicad
@@ -98,7 +98,7 @@
           - wireshark-qt
         state: present
 
-    - name: Install packages using yay module
+    - name: Install AUR Packages
       kewlfft.aur.aur:
         name:
           - mprocs
