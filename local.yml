@@ -30,6 +30,7 @@
           - yay
           - htop
           - zsh
+          - starship
           - net-tools
           - rsync
           - stow
