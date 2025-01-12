@@ -15,6 +15,7 @@ Ansible Playbook for boostrapping my personal computer devices
 - [ ] Add task to setup and install virtmanager
 - [ ] Compare running Ansible local vs Ansible-git pull
 - [ ] Add Github CI/CD job that does ansible-check
+- [ ] Configure shell to use oh-my-zsh with this package [ctorgalson.oh-my-zsh](https://github.com/ctorgalson/ansible-role-oh-my-zsh)
 
 # AUR Software to add
 - ~~mprocs~~
