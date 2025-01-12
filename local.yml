@@ -87,6 +87,19 @@
           - wireshark-qt
         state: present
 
+    - name: Install packages using yay module
+      kewlfft.aur.aur:
+        name:
+          - mprocs
+          - lazydocker
+          - anki
+          - nmap
+          - fd
+        state: present
+        use: yay
+      become: yes
+      become_user: "colin"
+    
     - name: Make Projects Dir
       ansible.builtin.file:
         path: /home/colin/Projects

@@ -15,9 +15,11 @@ Ansible Playbook for boostrapping my personal computer devices
 - [ ] Replace EXA with EZA
 
 # AUR Software to add
-- mprocs
-- lazydocker
-- anki
+- ~~mprocs~~
+- ~~lazydocker~~
+- ~~anki~~
+- ~~nmap~~
+- ~~fd~~
 - spacedrive
 - ulauncher
 - guisrcpy
@@ -25,7 +27,5 @@ Ansible Playbook for boostrapping my personal computer devices
 - rustdesk
 - barrier
 - czkawaka
-- nmap
-- FD
 - gleam
 - anki-bin
