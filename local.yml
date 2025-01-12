@@ -52,6 +52,7 @@
           - python-pytest
           - ruff
           - pyright
+          - ansible-lint
         state: present
 
     - name: Media
