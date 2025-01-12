@@ -101,7 +101,10 @@
       become: yes
       become_user: "colin"
     
-    - name: Make Projects Dir
+    - name: Create Project directories
       ansible.builtin.file:
         path: /home/colin/Projects
         state: directory
+        owner: colin
+        group: colin
+        mode: '0755'
