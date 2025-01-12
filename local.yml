@@ -37,7 +37,7 @@
           - zoxide
           - fzf
           - jq
-          - exa
+          - eza
           - terraform
         state: present
 
