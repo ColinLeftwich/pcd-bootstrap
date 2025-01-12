@@ -27,6 +27,7 @@
           - tmux
           - nvtop
           - git
+          - yay
           - htop
           - zsh
           - net-tools
