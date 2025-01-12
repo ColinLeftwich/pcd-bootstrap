@@ -86,3 +86,8 @@
           - wireshark-cli
           - wireshark-qt
         state: present
+
+    - name: Make Projects Dir
+      ansible.builtin.file:
+        path: /home/colin/Projects
+        state: directory
