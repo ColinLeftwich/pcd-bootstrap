@@ -1,5 +1,5 @@
 run:
-    ansible-playbook -i hosts local.yml
+    ansible-playbook -i hosts local.yml -K 
 
 check:
-    ansible-playbook -i hosts local.yml --check
+    ansible-playbook -i hosts local.yml -K --check
