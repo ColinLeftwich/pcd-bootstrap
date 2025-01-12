@@ -4,6 +4,7 @@ Ansible Playbook for boostrapping my personal computer devices
 
 # TODO
 - [x] Create Projects Directory
+- [ ] Add AUR packages
 - [ ] Generate SSH Key
 - [ ] Use bash script
 - [ ] Add ansible.cfg
