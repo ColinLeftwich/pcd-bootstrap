@@ -5,6 +5,14 @@
   vars:
     ansible_connection: local
     ansible_python_interpreter: auto_silent
+  
+  pre_tasks:
+  - name: Install kewlfft.aur collection
+    ansible.builtin.command:
+      cmd: ansible-galaxy collection install kewlfft.aur
+    delegate_to: localhost
+    run_once: true
+    changed_when: false
 
   tasks:
     - name: Update System
