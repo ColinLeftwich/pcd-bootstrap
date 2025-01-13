@@ -5,6 +5,7 @@
   vars:
     ansible_connection: local
     ansible_python_interpreter: auto_silent
+    ssh_key_filename: id_ed25519
   
   pre_tasks:
   - name: Install kewlfft.aur collection
@@ -119,3 +120,10 @@
         owner: colin
         group: colin
         mode: '0755'
+
+    - name: generate SSH key "{{ssh_key_filename}}"
+      openssh_keypair:
+        path: "~/.ssh/{{ssh_key_filename}}"
+        type: ed25519
+        state: present
+        force: no
