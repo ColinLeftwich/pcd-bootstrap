@@ -115,7 +115,7 @@
       become_user: "colin"
     
     - name: Create Project directories
-      ansible.builtin.file:
+      file:
         path: /home/colin/Projects
         state: directory
         owner: colin
@@ -128,3 +128,13 @@
         type: ed25519
         state: present
         force: no
+
+    - name: Download dotfiles 
+      git:
+        repo: git@github.com:ColinLeftwich/dotfiles.git
+        dest: /home/colin/dotfiles
+        single_branch: yes
+        version: main
+        key_file: /home/colin/.ssh/{{ssh_key_filename}}
+      become: yes
+      become_user: "colin"
