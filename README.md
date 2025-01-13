@@ -25,7 +25,7 @@ Ansible Playbook for boostrapping my personal computer devices
 - ~~fd~~
 - ~~anki-bin~~
 - ~~ulauncher~~
-- guisrcpy
+- guiscrcpy
 - zotero
 - rustdesk
 - barrier
