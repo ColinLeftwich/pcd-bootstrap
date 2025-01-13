@@ -23,12 +23,15 @@ Ansible Playbook for boostrapping my personal computer devices
 - ~~anki~~
 - ~~nmap~~
 - ~~fd~~
-- spacedrive
+- ~~anki-bin~~
 - ulauncher
 - guisrcpy
 - zotero
 - rustdesk
 - barrier
 - czkawaka
+
+
+# Backburner
+- spacedrive
 - gleam
-- anki-bin

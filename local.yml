@@ -103,7 +103,7 @@
         name:
           - mprocs
           - lazydocker
-          - anki
+          - anki-bin
           - nmap
           - fd
         state: present
