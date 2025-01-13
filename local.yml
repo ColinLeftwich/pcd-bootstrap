@@ -137,3 +137,14 @@
         version: main
         key_file: /home/colin/.ssh/{{ssh_key_filename}}
       become: yes
+      become_user: "colin"
+    
+    - name: Stow dotfiles (zsh)
+      command:
+        cmd: stow -v -t /home/colin zsh
+        chdir: /home/colin/dotfiles
+
+    - name: Stow dotfiles (alacritty)
+      command:
+        cmd: stow -v -t /home/colin alacritty
+        chdir: /home/colin/dotfiles
