@@ -8,8 +8,8 @@ Ansible Playbook for boostrapping my personal computer devices
 - [x] Add AUR packages
 - [x] Generate SSH Key
 - [x] Install MelsoLGS fonts
-- [ ] Download and gnu stow dotfiles
-- [ ] Use bash script
+- [x] Download and gnu stow dotfiles
+- [ ] Use bash script // wtf did I mean by this?????
 - [ ] Add ansible.cfg
 - [ ] Add roles
 - [ ] Add task to setup and install virtmanager
