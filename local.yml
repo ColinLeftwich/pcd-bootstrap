@@ -103,9 +103,10 @@
         name:
           - mprocs
           - lazydocker
-          - anki-bin
+          - anki-bijn
           - nmap
           - fd
+          - ulauncher
         state: present
         use: yay
       become: yes
