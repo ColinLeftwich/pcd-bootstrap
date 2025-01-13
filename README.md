@@ -6,9 +6,9 @@ Ansible Playbook for boostrapping my personal computer devices
 - [x] Create Projects Directory
 - [x] Replace EXA with EZA
 - [x] Add AUR packages
-- [ ] Download and gnu stow dotfiles
+- [x] Generate SSH Key
 - [ ] Install MelsoLGS fonts
-- [ ] Generate SSH Key
+- [ ] Download and gnu stow dotfiles
 - [ ] Use bash script
 - [ ] Add ansible.cfg
 - [ ] Add roles
