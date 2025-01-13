@@ -137,4 +137,3 @@
         version: main
         key_file: /home/colin/.ssh/{{ssh_key_filename}}
       become: yes
-      become_user: "colin"
