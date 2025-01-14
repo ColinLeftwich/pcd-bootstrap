@@ -10,7 +10,7 @@ Ansible Playbook for boostrapping my personal computer devices
 - [x] Install MelsoLGS fonts
 - [x] Download and gnu stow dotfiles
 - [x] Configure shell to use oh-my-zsh 
-- [ ] Add task to setup and install virtmanager
+- [x] Add task to setup and install virtmanager
 - [ ] Add roles
 
 cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
