@@ -12,6 +12,7 @@ Ansible Playbook for boostrapping my personal computer devices
 - [x] Configure shell to use oh-my-zsh 
 - [x] Add task to setup and install virtmanager
 - [ ] Add roles
+- [ ] Setup ansible-lint CI/CD and open issues for bugs
 
 cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 # AUR Software to add
