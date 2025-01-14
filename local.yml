@@ -27,6 +27,12 @@
         enabled: yes
         state: started
 
+    - name: Enable and Start libvirt
+      service:
+        name: libvirtd.socket
+        enabled: yes
+        state: started
+
     - name: Install Core Packages
       package:
         name:
@@ -66,6 +72,10 @@
           - ruff
           - pyright
           - ansible-lint
+          - libvirt
+          - qemu-full
+          - virt-manager
+          - dnsmasq
         state: present
 
     - name: Media Packages

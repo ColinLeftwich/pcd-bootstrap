@@ -1,0 +1,30 @@
+# Expiremental Virt manager script
+
+---
+- name: Setup virt-manager prerequisites
+  hosts: localhost
+  become: true
+
+  tasks:
+    - name: Check if libvirt is included in firewall zones
+      command: firewall-cmd --get-zones
+      register: firewall_zones
+
+    - name: Restart firewall service if libvirt and libvirt-routed are in zones
+      systemd:
+        name: firewalld
+        state: restarted
+      when: "'libvirt' in firewall_zones.stdout and 'libvirt-routed' in firewall_zones.stdout"
+
+    - name: Check for an active default network in virsh
+      command: virsh net-list --all
+      register: virsh_networks
+
+    - name: Start the default network in virsh if not active
+      command: virsh net-start default
+      when: "'default' not in virsh_networks.stdout"
+
+    - name: Add user to libvirt-sock group
+      command: chown {{ ansible_user_id }}:{{ ansible_user_id }} /var/run/libvirt/libvirt-sock
+      args:
+        creates: /var/run/libvirt/libvirt-sock
