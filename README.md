@@ -9,14 +9,11 @@ Ansible Playbook for boostrapping my personal computer devices
 - [x] Generate SSH Key
 - [x] Install MelsoLGS fonts
 - [x] Download and gnu stow dotfiles
-- [ ] Use bash script // wtf did I mean by this?????
-- [ ] Add ansible.cfg
-- [ ] Add roles
+- [x] Configure shell to use oh-my-zsh 
 - [ ] Add task to setup and install virtmanager
-- [ ] Compare running Ansible local vs Ansible-git pull
-- [ ] Add Github CI/CD job that does ansible-check
-- [ ] Configure shell to use oh-my-zsh with this package [ctorgalson.oh-my-zsh](https://github.com/ctorgalson/ansible-role-oh-my-zsh)
+- [ ] Add roles
 
+cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 # AUR Software to add
 - ~~mprocs~~
 - ~~lazydocker~~
