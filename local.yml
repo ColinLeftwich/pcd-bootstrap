@@ -119,6 +119,7 @@
           - nmap
           - fd
           - ulauncher
+          - imhex-bin
           - ttf-meslo-nerd-font-powerlevel10k
         state: present
         use: yay
