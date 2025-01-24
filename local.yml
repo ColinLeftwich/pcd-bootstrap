@@ -138,48 +138,6 @@
         name: colin
         shell: /bin/zsh
 
-    - name: Check if Oh My Zsh is installed
-      stat:
-        path: /home/colin/.oh-my-zsh
-      register: oh_my_zsh_check
-
-    - name: Install Oh My Zsh if not installed
-      shell: |
-        curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh -s -- --unattended
-      args:
-        chdir: /home/colin/
-      register: oh_my_zsh_installed
-      when: not oh_my_zsh_check.stat.exists
-      become: true
-      become_user: colin
-
-
-    - name: Delete Oh My Zsh generated .zshrc
-      file:
-        path: /home/colin/.zshrc
-        state: absent
-      when: oh_my_zsh_installed is succeeded
-    
-    - name: Download dotfiles 
-      git:
-        repo: git@github.com:ColinLeftwich/dotfiles.git
-        dest: /home/colin/dotfiles
-        single_branch: yes
-        version: main
-        key_file: /home/colin/.ssh/{{ssh_key_filename}}
-      become: yes
-      become_user: "colin"
-
-    - name: Stow dotfiles (zsh)
-      command:
-        cmd: stow -v -t /home/colin zsh
-        chdir: /home/colin/dotfiles
-
-    - name: Stow dotfiles (alacritty)
-      command:
-        cmd: stow -v -t /home/colin alacritty
-        chdir: /home/colin/dotfiles
-
     - name: Create Project directories
       file:
         path: /home/colin/Projects
